@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Optikale — Salud visual y estilo</title>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="nav-inner">
+
+
+            <div class="logo">
+
+                <img src="../static/img/optikale.png" alt="Optikale">
+
+            </div>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#servicios">Servicios</a>
+                </li>
+
+
+                <li>
+                    <a href="#cita">Agendar</a>
+                </li>
+
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+    </nav>
+
+
+
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+
+        <div class="container">
+
+
+            <div class="hero-content">
+
+
+                <span class="hero-tag">
+                    confianza a primera vista
+                </span>
+
+
+                <h1>
+
+                    Una visión más clara,
+                    <span>un estilo que habla de ti</span>
+
+                </h1>
+
+
+
+                <p>
+
+                    Exámenes visuales profesionales,
+                    monturas modernas y soluciones ópticas
+                    para cuidar tus ojos en Cartagena.
+
+                </p>
+
+
+
+                <a href="#cita" class="btn-primary">
+
+                    Agendar cita
+
+                </a>
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- SERVICIOS -->
+
+
+    <section class="servicios" id="servicios">
+
+
+        <div class="container">
+
+
+            <h2>
+
+                Nuestros servicios
+
+            </h2>
+
+
+
+            <div class="servicios-grid">
+
+
+
+                <div class="servicio-card">
+
+
+                    <h3>
+                        Exámenes visuales
+                    </h3>
+
+
+                    <p>
+
+                        Evaluaciones completas de visión con
+                        atención profesional y equipos especializados.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <div class="servicio-card">
+
+
+                    <h3>
+                        Monturas y lentes
+                    </h3>
+
+
+                    <p>
+
+                        Encuentra diseños modernos,
+                        cómodos y adaptados a tu estilo.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+                <div class="servicio-card">
+
+
+                    <h3>
+                        Lentes de contacto
+                    </h3>
+
+
+                    <p>
+
+                        Asesoría personalizada para elegir
+                        la mejor opción para tus ojos.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- CITAS -->
+
+
+    <section class="cita-section" id="cita">
+
+
+        <div class="container">
+
+
+
+            <h2>
+
+                Agenda tu cita
+
+            </h2>
+
+
+
+
+            <form method="post" action="/agendar" enctype="multipart/form-data">
+
+
+
+                <div class="form-group">
+
+
+                    <label for="nombre">
+
+                        Nombre completo
+
+                    </label>
+
+
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+
+                </div>
+
+
+
+
+
+
+                <div class="form-group">
+
+
+                    <label for="telefono">
+
+                        Teléfono
+
+                    </label>
+
+
+                    <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000" required>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="form-group">
+
+
+                    <label for="gmail">
+
+                        Correo electrónico
+
+                    </label>
+
+
+                    <input type="email" id="gmail" name="gmail" placeholder="correo@gmail.com" required>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="form-group">
+
+
+                    <label for="fecha">
+
+                        Fecha
+
+                    </label>
+
+
+                    <input type="date" id="fecha" name="fecha" required>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="form-group">
+
+
+                    <label for="hora">
+
+                        Hora
+
+                    </label>
+
+
+
+                    <select id="hora" name="hora" required>
+
+
+                        <option disabled selected>
+                            Selecciona una hora
+                        </option>
+
+
+
+                        <option value="10:00">
+                            10:00 am
+                        </option>
+
+
+                        <option value="11:00">
+                            11:00 am
+                        </option>
+
+
+                        <option value="14:00">
+                            2:00 pm
+                        </option>
+
+
+                        <option value="15:00">
+                            3:00 pm
+                        </option>
+
+
+                        <option value="16:00">
+                            4:00 pm
+                        </option>
+
+
+                        <option value="17:00">
+                            5:00 pm
+                        </option>
+
+                        <option value="18:00">
+                            6:00 pm
+                        </option>
+
+                        <option value="18:30">
+                            6:30 pm
+                        </option>
+                    </select>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="form-group">
+
+
+                    <label for="historia">
+
+                        Historia clínica (opcional)
+
+                    </label>
+
+
+                    <input type="file" id="historia" name="historia" accept=".pdf,.jpg,.png,.doc">
+
+
+                </div>
+
+
+
+
+
+
+                <button type="submit">
+
+                    Confirmar cita
+
+                </button>
+
+
+
+
+
+            </form>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+    <footer class="footer" id="contacto">
+
+
+        <div class="container">
+
+
+
+            <div class="footer-inner">
+
+
+
+
+
+                <div class="footer-brand">
+
+
+                    <img src="../static/img/optikale.png" alt="Optikale">
+
+
+                    <p>
+
+                        Cuidando tu visión con tecnología,
+                        confianza y atención personalizada.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+                <div class="footer-info">
+
+
+                    <h3>
+
+                        Contacto
+
+                    </h3>
+
+
+
+                    <p>
+                        📍 Cartagena, barrio Los Caracoles
+                    </p>
+
+
+                    <p>
+                        📞 3012801718
+                    </p>
+
+
+                    <p>
+
+                        📸
+
+                        <a href="https://www.instagram.com/optikale_/" target="_blank">
+
+                            @optikale_
+
+                        </a>
+
+                    </p>
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="footer-copy">
+
+
+                <p>
+
+                    © 2026 Optikale · Todos los derechos reservados
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,42 @@
+"""Parte pública (cliente)"""
+
+   #La persona entra a la página y puede:
+
+   " Ver información de la óptica
+   # Ver servicios"
+   # Solicitar cita
+   # Llenar datos:
+   # Nombre
+   # Teléfono
+   # Correo
+   # Fecha deseada
+   # Hora deseada
+   "Cambiar fecha/hora
+   # Cancelar cita"
+   " Motivo de consulta (opcional)"
+
+
+"Parte privada (administrador)"
+
+    # El dueño de la óptica entra con usuario y contraseña.
+
+   " # Puede:
+
+    #Citas
+    #Ver citas pendientes
+    #Marcar como atendida
+    #Pacientes
+    #Ver pacientes registrados
+    #Ver historial de citas
+    #Ver historia clínica
+
+
+    Guardar:
+
+    #Fecha del examen
+    #Resultados
+    #Fórmula
+    #Observaciones
+    #Recomendaciones "
+
+    # todo esto sta hecho con css, html, python y sqlite, necesito ahora saber cual es el siguiente paso

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin - Optikale</title>
+
+    <link rel="stylesheet" href="../static/css/admin.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="contenedor">
+
+
+        <h1>Panel Administrador Optikale 👓</h1>
+
+
+        <table>
+
+
+            <tr>
+
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Gmail</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Historia</th>
+                <th>Estado</th>
+                <th>Acción</th>
+
+            </tr>
+
+
+
+            {% for cita in citas %}
+
+
+            <tr>
+
+
+                <td>{{ cita[0] }}</td>
+
+                <td>{{ cita[1] }}</td>
+
+                <td>{{ cita[2] }}</td>
+
+                <td>{{ cita[3] }}</td>
+
+                <td>{{ cita[4] }}</td>
+
+                <td>{{ cita[5] }}</td>
+
+                <td>{{ cita[6] }}</td>
+
+                <td>
+
+                    <span class="pendiente">
+                        {{ cita[7] }}
+                    </span>
+
+                </td>
+
+
+                <td>
+
+
+                    <form action="/completar_cita/{{ cita[0] }}" method="POST">
+
+
+                        <button class="boton-atender" type="submit">
+
+                            Atendido ✅
+
+                        </button>
+
+
+                    </form>
+
+
+                </td>
+
+
+            </tr>
+
+
+            {% endfor %}
+
+
+
+        </table>
+
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>
